@@ -25,11 +25,11 @@
 
             <ul class="nav-list">
                 <li>
-                    <a class="nav-item" href=""> Portfolio </a>
+                    <a class="nav-item" href="#portfolio"> Portfolio </a>
                     <hr>
                 </li>
                 <li>
-                    <a class="nav-item" href=""> Blog </a>
+                    <a class="nav-item" href="#blog"> Blog </a>
                     <hr>
                 </li>
             </ul>
@@ -59,8 +59,109 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
+        <div class="p-text">
+            <p>-Portfolio</p>
+            <h3>All Creative Works, <br> Selected Projects</h3>
+        </div>
+        <div class="p-projects">
+            <div class="projects">
+                <h3>Pokedex | React <img src="/images/pokemon.png" alt=""> </h3>
+                <p>Pokedex app built on React for searching data of a Pokemon from their name</p>
+                <div class="project-link">
+                    <a href="https://m-pokedex.netlify.app/">👨‍💻</i></a>
+                    <a href="https://github.com/mannypanwar/pokedex"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="projects">
+                <h3>Keeper | React <img src="/images/notepad.png" alt=""> </h3>
+                <p>Keeper is React app for keeping all ur notes at one place.</p>
+                <div class="project-link">
+                    <a href="https://m-keeper.netlify.app/">👨‍💻</i></a>
+                    <a href="https://github.com/mannypanwar/keeper"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="projects">
+                <h3>Weather App | React <img src="/images/cloud.png" alt=""> </h3>
+                <p>Weather app is for searching current weather, It provides current temp with max and min temperature.
+                </p>
+                <div class="project-link">
+                    <a href="https://m-weather.netlify.app/">👨‍💻</i></a>
+                    <a href="https://github.com/mannypanwar/weather-app"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="projects">
+                <h3>Lyrics Finder | React <img src="/images/lyrics.png" alt=""></h3>
+                <p>Lyrics Finder is to search lyrics of the song u search.</p>
+                <div class="project-link">
+                    <a href="https://m-lyricsfinder.netlify.app/">👨‍💻</i></a>
+                    <a href="https://github.com/mannypanwar/lyricsFinder"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="projects">
+                <h3>Expense Tracker | MERN <img src="/images/expense.png" alt=""> </h3>
+                <p>Expense tracker is to keep track of ur daily Expenses</p>
+                <div class="project-link">
+                    <a href="https://shielded-garden-00673.herokuapp.com/">👨‍💻</i></a>
+                    <a href="https://github.com/mannypanwar/expense"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
 
+        </div>
+    </section>
+    <section class="blog">
+        <div class="blog-text">
+            <p>-Blog</p>
+            <h3>What's new? <br> My Blog and News</h3>
+        </div>
+        <div class="blog-list">
+            <div class="blogs">
+
+                <p>June 30</p>
+                <h3>Dark art of centering elements in CSS</h3> <a
+                    href="https://dev.to/mannypanwar/dark-art-of-centering-elements-in-css-5dnp"><i
+                        class="fas fa-arrow-right"> </i></a>
+
+
+            </div>
+            <hr>
+            <div class="blogs">
+                <p>June 30</p>
+                <h3>Difference in Asynchronous & Synchronous JavaScript Code</h3> <a
+                    href="https://dev.to/mannypanwar/difference-in-asynchronous-synchronous-javascript-code-4gcb"><i
+                        class="fas fa-arrow-right"> </i></a>
+            </div>
+            <hr>
+            <div class="blogs">
+                <p>June 30</p>
+                <h3>6 VScode Extensions to boost your Code</h3> <a
+                    href="https://dev.to/mannypanwar/6-vscode-extensions-to-boost-your-code-349k"><i
+                        class="fas fa-arrow-right"> </i></a>
+            </div>
+            <hr>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="contact-text">
+            <h3>Got a project? <br> Let's talk.</h3>
+
+
+        </div>
+        <div class="contact-form">
+            <h3>Send a mail</h3>
+            <form class="form" action="mailto:fit.panwar@gmail.com" method="post" enctype="text/plain"
+                autocomplete="off">
+                <label for="name">What's your name?</label>
+
+                <input type="text" name="name" id="">
+                <hr>
+                <label for="mail">Your fancy email</label>
+
+                <input type="text" name="mail" id="">
+                <hr>
+                <button type="submit"><img src="/images/go.png" alt=""></button>
+            </form>
+        </div>
     </section>
 </body>
 <script src="/index.js"></script>
