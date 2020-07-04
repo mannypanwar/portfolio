@@ -4,6 +4,7 @@
   --main-font: #ffc25c;
   --secondary-font: #ebebec;
   --p-font: #a1a4b5;
+  --raleway: "Raleway", sans-serif;
 }
 * {
   padding: 0;
@@ -19,7 +20,6 @@ body {
   height: 80vh;
   padding: 2.5% 10% 15%;
   color: var(--secondary-font);
-  font-family: "Raleway", sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -31,10 +31,15 @@ body {
   justify-content: space-between;
 }
 
+.navbar-brand > img:hover {
+  animation: 2s hover infinite;
+}
+
 .nav-list {
   display: flex;
   align-items: center;
   list-style-type: none;
+  font-family: var(--raleway);
 }
 .nav-list > li {
   display: flex;
@@ -42,11 +47,15 @@ body {
   align-items: center;
 }
 
+.nav-list > li:hover {
+  animation: 1s listHover;
+}
 .nav-list > li:hover > hr {
   display: flex;
   border: 5px dotted var(--main-font);
   width: 0.5rem;
   border-style: none none dotted;
+  animation: 1s listHr;
 }
 
 .nav-list > li > hr {
@@ -76,13 +85,14 @@ body {
   border: 1px solid var(--main-font);
 }
 .name {
-  margin-top: 4rem;
+  margin-top: 5rem;
   font-size: 3rem;
+  font-family: var(--raleway);
 }
 .socials {
   margin-top: 1.5rem;
   display: flex;
-  width: 5rem;
+  width: 6rem;
   justify-content: space-between;
 }
 .socials > a {
@@ -106,6 +116,7 @@ body {
   font-size: 1.5rem;
   margin-top: 1rem;
   margin-left: 7px;
+  font-family: var(--raleway);
 }
 
 .main-info > .desc {
@@ -120,6 +131,53 @@ body {
   font-size: 1rem;
   margin-top: 1rem;
   margin-left: 7px;
+  font-size: 1.5rem;
+}
+
+.main-info > a:hover > i {
+  animation: 1s contactHover infinite;
 }
 
 /* end */
+
+/* portfolio */
+
+.portfolio {
+  background-color: var(--secondary-bg);
+  height: 80vh;
+}
+
+/* end */
+
+@keyframes hover {
+  20% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  80% {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes listHover {
+  20% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes listHr {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+}
+
+@keyframes contactHover {
+  50% {
+    transform: translateX(5px);
+  }
+}
