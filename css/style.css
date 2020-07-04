@@ -1,0 +1,47 @@
+:root {
+  --main-bg: #333646;
+  --secondary-bg: #252734;
+  --main-font: #ffc25c;
+  --secondary-font: #ebebec;
+  --p-font: #6d6f7b;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.main {
+  background-color: var(--main-bg);
+  height: 80vh;
+  padding: 2.5% 10%;
+  color: var(--secondary-font);
+  font-family: "Raleway", sans-serif;
+}
+
+/* navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+.nav-item {
+  color: var(--secondary-font);
+  text-decoration: none;
+  margin: 1rem;
+}
+
+/* navbar end */
+
+/* main hero section */
+
+/* end */
