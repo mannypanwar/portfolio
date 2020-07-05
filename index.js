@@ -10,4 +10,11 @@ document
   .querySelector(".submit-btn")
   .addEventListener("click", function (event) {
     event.preventDefault();
+
+    Swal.fire({
+      icon: "success",
+      title: "Submitted",
+
+      timer: 1500,
+    });
   });
