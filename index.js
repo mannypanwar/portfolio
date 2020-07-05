@@ -6,15 +6,15 @@ gsap.from(".navbar-brand, .nav-list", {
   delay: 0.5,
 });
 
-document
-  .querySelector(".submit-btn")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
+// document
+//   .querySelector(".submit-btn")
+//   .addEventListener("click", function (event) {
+//     event.preventDefault();
 
-    Swal.fire({
-      icon: "success",
-      title: "Submitted",
+//     Swal.fire({
+//       icon: "success",
+//       title: "Submitted",
 
-      timer: 1500,
-    });
-  });
+//       timer: 1500,
+//     });
+//   });
