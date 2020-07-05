@@ -5,16 +5,3 @@ gsap.from(".navbar-brand, .nav-list", {
   ease: "back",
   delay: 0.5,
 });
-
-// document
-//   .querySelector(".submit-btn")
-//   .addEventListener("click", function (event) {
-//     event.preventDefault();
-
-//     Swal.fire({
-//       icon: "success",
-//       title: "Submitted",
-
-//       timer: 1500,
-//     });
-//   });
