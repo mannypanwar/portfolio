@@ -1,38 +1,22 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(".navbar-brand, .nav-list", {
-  duration: 1.5,
-  opacity: 0,
-  scale: 0.3,
-  ease: "back",
-  delay: 0.5,
-});
+function init() {
+  gsap.from("body", {
+    backgroundColor: "#fff",
+    opacity: 0,
+    duration: 0.5,
+    ease: "none",
+  });
 
-gsap.to(".hero", {
-  opacity: 0,
-  scrollTrigger: {
-    trigger: ".main",
-    start: "top top",
-    // end: "bottom center",
-    scrub: true,
-  },
-});
+  gsap.from(".navbar-brand, .nav-list", {
+    duration: 3,
+    opacity: 0,
+    scale: 0.3,
+    ease: "back",
+    delay: 0.5,
+  });
+}
 
-gsap.to([".p-Text", ".p-projects"], {
-  opacity: 0,
-  scrollTrigger: {
-    trigger: ".portfolio",
-    start: "top top",
-    // end: "bottom center",
-    scrub: true,
-  },
-});
-gsap.to([".blog-Text", ".blog-list"], {
-  opacity: 0,
-  scrollTrigger: {
-    trigger: ".blog",
-    start: "top top",
-    // end: "bottom center",
-    scrub: true,
-  },
+window.addEventListener("load", function () {
+  init();
 });
