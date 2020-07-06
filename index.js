@@ -1,5 +1,9 @@
 gsap.registerPlugin(ScrollTrigger);
 
+window.addEventListener("load", function () {
+  init();
+});
+
 function init() {
   gsap.from("body", {
     backgroundColor: "#fff",
@@ -16,7 +20,3 @@ function init() {
     delay: 0.5,
   });
 }
-
-window.addEventListener("load", function () {
-  init();
-});
